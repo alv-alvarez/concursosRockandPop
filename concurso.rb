@@ -8,12 +8,12 @@ random = Random.new
 agent.user_agent = 'Windows Chrome'
 rockAndPop = agent.get('http://rockandpop.cl/2013/12/no-te-pierdas-el-rip-curl-surf-music-festival/')
 formConcurso = rockAndPop.forms.first
-formConcurso.input_1 = 'Alvaro Alvarez Arancibia' #Nombre
-formConcurso.input_7 = '16889905-K' #Rut
-formConcurso.input_3 = '24' #Edad
-formConcurso.input_4 = 'Nunoa' #Comuna
-formConcurso.input_5 = 'alv.ale.alvarez@gmail.com' #Mail
-formConcurso.input_6 = '83037525' #Telefono
+formConcurso.input_1 = '' #Nombre
+formConcurso.input_7 = '' #Rut
+formConcurso.input_3 = '' #Edad
+formConcurso.input_4 = '' #Comuna
+formConcurso.input_5 = '' #Mail
+formConcurso.input_6 = '' #Telefono
 
 for i in 1..random.rand(30..50)
 	formConcurso.submit
